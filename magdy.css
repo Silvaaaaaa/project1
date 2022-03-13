@@ -1,0 +1,559 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font: lucida sans;
+}
+.container{
+    width: 85%;
+    margin:auto;
+}
+.navbar{
+    background-color: #ddd;
+    padding: 15px 0;
+    overflow: hidden;
+position: relative;
+border-bottom: 1px solid #000;
+}
+.navbar label ,.navbar input{
+    position: absolute;
+    top: 15%;
+    right: 8%;
+}
+.navbar input{
+display: none;
+}
+.navbar label{
+    display: none;
+    width: 15px;
+    height: 15px ;
+    background-image:url(https://raw.githubusercontent.com/HamzaNabil/Template-HTML_CSS_MediaQuery/master/images/Navbar/open.png) ;
+    background-size:cover ;
+    padding: 20px;
+}
+
+.navbar .logo{
+    width: 50%;
+    float: left;
+}
+.navbar .logo .logo-text{
+    font-style:35px;
+    font-weight: bold;
+}
+
+/*  */
+.navbar .ul-list .list-item{
+    display: inline-block;
+}
+.navbar .ul-list .list-item a{
+    display: block;
+    background-color: #777;
+    color: #222;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+ 
+@media (max-width:768px) {
+    .navbar .logo{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+    .navbar .ul-list {
+        width: 100%;
+        float: none;
+        padding-top: 15px;
+    }
+    .navbar .ul-list .list-item{
+        display:none;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        
+    }
+    .navbar label ,.navbar input{
+        position: absolute;
+        top: 2%;
+        right: 8%;
+    }
+    .navbar input{
+    display: none;
+    }
+    .navbar label{
+        display: block;
+        width: 15px;
+        height: 15px ;
+        background-image:url(https://raw.githubusercontent.com/HamzaNabil/Template-HTML_CSS_MediaQuery/master/images/Navbar/open.png) ;
+        background-size:cover ;
+        padding: 20px;
+    }
+    }
+    .navbar input:checked~.ul-list{
+    display: block ;
+}
+.navbar .ul-list .list-item a:hover{
+    color: white;
+     background-color: sienna;
+}
+.home{
+    height: 500px;
+    background-image: url(https://raw.githubusercontent.com/HamzaNabil/Template-HTML_CSS_MediaQuery/master/images/Home/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+.home .home-information{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%); 
+}
+.home .home-information h2{
+    font-size:60px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#5e5e5e;
+}
+.home .home-information h4{
+   font-size: 35px;
+   font-weight: bold;
+   margin-bottom: 20px;
+   color: #eb5424;
+}
+.home .home-information p{
+    font-size: 30px;
+    line-height: 1.8;
+    color: #888;
+    margin-bottom: 15px;
+}
+.home .home-information p span{
+    color: #000;
+}
+.home .home-information button{
+   background-color: #eb5424;
+   color:#fff ;
+   width: 150px;
+   padding: 15px;
+   font-size: 18px;
+   border: 0;
+   font-weight: bold;
+}
+.home .home-information button:hover{
+    background-color: #fff;
+    color: #eb5424;
+}
+@media (max-width:767px){
+    .home .home-information h2{
+        font-size:30px;
+        margin-top: 15px;
+    }
+    .home .home-information h4{
+        font-size: 30px;
+     }
+
+}
+.work{
+  padding: 50px 0 ;
+  overflow: hidden;
+}
+.work h2{
+  font-size:50px;
+}
+.work .part{
+    border: 1px solid red;
+    float: left;
+    margin-top: 15px;
+padding: 100px 0 ;
+width: 30%;
+text-align: center;
+margin-left: 5%;
+margin-bottom: 60px;
+}
+.work .normal{
+    margin-left: 0;
+}
+.work .part h4{
+    font-size: 30px;
+    color: #eb5424;
+    margin-bottom: 30px;
+    }
+.work .part .line{
+    width: 60%;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.work .part p{
+line-height: 1.5;
+color: #888;
+padding:20px;
+}
+
+@media (min-width:501px)and(max-width:787px){
+    .work .part{
+        width: 47%;
+        font-size: 40px;
+    }
+}
+@media (max-width:500px){
+    .work .part{
+        width: 80%;
+        font-size: 40px;
+        float: none;
+        margin: 0;
+    }
+}
+.pro{
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+.pro h2{
+    font-size: 30px;
+    text-align: center;
+}
+.pro ul {
+    text-align: center;
+    font-size: 25px ;
+    margin-top: 20px;
+}
+.pro ul li{
+    display: inline-block;
+    margin-left: 30px ;
+    margin-bottom: 20px ;
+}
+.pro ul li.silva{
+    background-color: #eb5424;
+    color:white;
+    padding: 10px 10px;
+    width: 100px ;
+}
+
+.pro .box div{
+    width: 25%;
+    float: left;
+    font-size: 0;
+    position: relative;
+}
+
+.pro .box div img{
+  width: 100%;
+}
+.pro .box .overlay{
+    position: absolute;
+color: rosybrown;
+}
+@media (max-width:787px){
+.pro .box div{
+        width: 50%;
+    }
+    .pro ul li {
+        font-size: 30px;
+    }
+    .pro ul li .silva{
+        font-size: 30px;
+    }
+}
+@media (max-width:565px){
+    .pro .box div{
+            width: 100%;
+        }
+    .pro ul li {
+        display: block;
+        text-align: center;
+    }
+    .pro ul li.silva{
+      margin:auto;
+      margin-bottom: 10px;
+    }
+    }
+
+    .pro-skills {
+        padding: 50px 0;
+        overflow: hidden;
+    }
+    .pro-skills .profile{
+        width: 50%;
+        float: left;
+    }
+    .pro-skills .skills{
+        width: 50%;
+        float: left;
+    }
+    .pro-skills .profile h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    
+    .pro-skills .profile ul li {
+        color: #888;
+        font-size: 22px;
+margin-bottom: 5px ;
+        list-style: none;
+    }
+    .pro-skills .profile ul .span1{
+        color: #eb5424;
+            }
+    .pro-skills .profile ul  li span  {
+
+    margin-right: 40px ;
+    font-size: 22px;
+color: black;
+text-transform: capitalize;
+    }
+.skills h2{
+    margin-bottom: 15px;
+    font-size: 40px;
+
+}
+.skills h2 span{
+    font-weight: bold;
+    font-size: 35px;
+}
+.skills p {  
+    color: #888;
+    margin-bottom: 20px ;
+}
+.skills .bar{
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-right: 100px;   
+    position: relative; 
+}
+/* .skills .bar{
+    border-bottom: 3px solid red;
+    width: 100%;
+} */
+.skills .bar .ss{
+    position: absolute;
+    left: 90%;
+}
+.skills .bar .s{
+    position: absolute;
+    left: 80%;
+}
+.skills .bar .sss{
+    position: absolute;
+    left: 50%;
+}
+.skills .bar .parent1{
+    border-bottom: 3px solid red;
+    width: 100%;
+}
+.skills .bar .parent2{
+    border-bottom: 3px solid red;
+    width: 90%;
+}
+.skills .bar .parent3{
+    border-bottom: 3px solid red;
+    width: 60%;
+}
+@media (max-width:500px){
+    .pro-skills .profile{
+        width: 100%;
+        float: none;
+    }
+    .pro-skills .skills{
+        width: 100%;
+        float: none;
+    }
+    .pro-skills .skills p{
+        font-size: 25px;
+    }
+}
+.creative{
+    height: 500px;
+    background-image: url(https://raw.githubusercontent.com/HamzaNabil/Template-HTML_CSS_MediaQuery/master/images/creative/about-bg.jpg);
+    background-size: cover;
+    background-position:center ;
+    background-attachment: fixed;
+}
+.creative .creative-information{
+    float: right;
+    padding: 50px 0 0 0 ;
+    width: 50%;
+}
+.creative .creative-information h2{
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #eb5424;
+}
+.creative .creative-information h4{
+    margin-bottom: 20px;
+    font-size: 37px;
+    font-weight: bold;
+}
+.creative .creative-information p{
+   color: #888;
+   line-height: 1.6;
+}
+@media (max-width:500px){
+  .creative{
+      height: auto;
+      background-image: url(https://raw.githubusercontent.com/HamzaNabil/Template-HTML_CSS_MediaQuery/master/images/creative/about-bg.jpg);
+      background-position:center ;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  .creative .creative-information{
+      width: 100%;
+      float: none;
+
+  }
+  .creative .creative-information p{
+    color: black;
+    font-size: 30px;
+    line-height: 1.8;
+ }
+}
+.social {
+height: auto;
+
+}
+.social .social-face{
+    width: 33.3%;
+    float: left;
+    background-color: #3b5998;
+    padding: 60px;
+    text-align: center;
+    font-size: 30px ;
+    color: white;
+    
+}
+.social .social-inst{
+    width: 33.3%;
+    float: left;
+    background-color: #498cbf;
+    padding: 60px;
+    text-align: center;
+    font-size: 30px ;
+    color: white;
+
+}
+.social .social-twi{
+    width: 33.3%;
+    float: left;
+    background-color: #cc2127;
+    padding: 60px;
+    text-align: center;
+    font-size: 30px ;
+    color: white;
+
+} 
+@media (max-width:500px){
+.social .social-face{
+    text-align: center;
+    font-size: 18px ;
+    
+}
+.social .social-inst{
+    text-align: center;
+    font-size: 18px ;
+    
+}
+.social .social-twi{
+    text-align: center;
+    font-size: 18px ;
+}
+}
+.drop{
+    padding: 50px 0;
+    text-align: center;
+}
+.drop h2{
+    font-size: 60px;
+    margin-bottom: 30px ;
+    margin-top: 30px;
+    font-weight: normal;
+} 
+.drop form {
+    width: 70%;
+    margin:auto;
+}
+.drop form .form-input input{
+    width: 49%;
+    padding: 15px;
+
+}
+.drop form .form-input input[type=text]{
+float: left;
+}
+.drop form .form-input input[type=email]{
+    float: right;
+    }
+.drop form .sub {
+width: 100%;
+margin-top: 5px;
+padding: 15px;
+
+}
+.drop form textarea{
+    width: 100%;
+    background-color: #ccc;
+    margin-top: 5px;
+    padding: 15px;
+    
+}
+.drop form input[type=submit]{
+    width: 60%;
+    margin-top: 5px;
+    background-color: #fff;
+    color: #888;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 15px;
+
+}
+@media (max-width:787px){
+.drop form .form-input input{
+    font-size: 25px;
+}
+.drop form textarea{
+    font-size: 25px;
+    }
+    .drop form .sub{
+        font-size: 25px;
+    }
+    .drop form input[type=submit]{
+        font-size: 25px;
+    }
+}
+@media (max-width:500px){
+.drop form .form-input input{
+  width: 100%;
+  font-size: 25px;
+}
+.drop form input[type=submit]{
+font-size: 25px;
+width: 100%;
+}
+.drop form textarea{
+font-size: 25px;
+}
+.drop form .sub{
+    font-size: 25px;
+}
+}
+.footer{
+    text-align: center;
+    padding: 10px 0 ;
+}
+.footer p {
+    color: #888;
+    margin:0; 
+
+}
+
+
+
+
+
+
+
+
+
+
